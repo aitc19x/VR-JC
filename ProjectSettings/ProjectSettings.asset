@@ -51,7 +51,7 @@ PlayerSettings:
   m_MTRendering: 1
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
-  androidShowActivityIndicatorOnLoading: -1
+  androidShowActivityIndicatorOnLoading: 2
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 0
   iosAllowHTTPDownload: 1
@@ -128,7 +128,7 @@ PlayerSettings:
   vrSettings:
     cardboard:
       depthFormat: 1
-      enableTransitionView: 1
+      enableTransitionView: 0
     daydream:
       depthFormat: 0
       useSustainedPerformanceMode: 0
@@ -312,7 +312,7 @@ PlayerSettings:
     - cardboard
   m_BuildTargetEnableVuforiaSettings:
   - m_BuildTarget: Android
-    m_Enabled: 1
+    m_Enabled: 0
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   openGLRequireES32: 0

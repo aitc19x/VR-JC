@@ -1,6 +1,6 @@
 # Project VR-JC
 
-Recently, VR has been a popular technology, which enables us to explore without going to the real places by devices such as Google Cardboard. In order to prolong the friendship between Japan and China, the project has been proposed.
+Recently, VR becomes a popular technology, which enables us to explore without going to the real places by devices such as Google Cardboard. In order to prolong the friendship between Japan and China, the project was proposed.
 
 The three clubs, Akashi Jyoken, AMSJXNU IT Club, and AMSJXNU Nippon Bunka Kenkyu Bu, are cooperated in order to convey better experience to viewers.
 

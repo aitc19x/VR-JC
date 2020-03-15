@@ -14,4 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CopyrightScene.unity
     guid: 2c68e551c614d5e5a851ced942a319ff
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/RoomSceneDemo.unity
+    guid: 72c73f2e9065650f4b10e5f46bb2b631
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e08933c39f3944f4cbe15d28191d966e,
+      type: 2}

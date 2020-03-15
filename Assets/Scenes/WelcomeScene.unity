@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 10639888}
   - component: {fileID: 10639887}
   - component: {fileID: 10639886}
+  - component: {fileID: 10639889}
   m_Layer: 5
   m_Name: ButtonMenu
   m_TagString: Untagged
@@ -260,7 +261,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 10639889}
         m_MethodName: ShowMenu
         m_Mode: 1
         m_Arguments:
@@ -268,7 +269,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: ShowMenu
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &10639887
@@ -307,6 +308,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10639884}
   m_CullTransparentMesh: 0
+--- !u!114 &10639889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10639884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a8aa3a4f4864bad80c26a2e7dc4ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &74862848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -441,6 +454,7 @@ GameObject:
   - component: {fileID: 475469734}
   - component: {fileID: 475469733}
   - component: {fileID: 475469732}
+  - component: {fileID: 475469731}
   m_Layer: 5
   m_Name: ButtonCopyright
   m_TagString: Untagged
@@ -468,6 +482,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -17.77}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &475469731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475469729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a8aa3a4f4864bad80c26a2e7dc4ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &475469732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,7 +537,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 475469731}
         m_MethodName: ShowCopyright
         m_Mode: 1
         m_Arguments:
@@ -919,8 +945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.7, y: 12.1}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 42.7, y: 21.1}
+  m_SizeDelta: {x: 160, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &933977186
 MonoBehaviour:

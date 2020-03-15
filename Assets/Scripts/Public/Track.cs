@@ -1,7 +1,6 @@
 ﻿// Source: https://qiita.com/NON906/items/9ce03e2640c3e16eb4f6
 // Copyright by @NON906 on Qiita
 
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using GoogleARCore;

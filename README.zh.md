@@ -24,7 +24,7 @@
 
 推荐使用Unity 2019.3.2f1，并请不要使用2020.1或之后的版本，因为GVR SDK for Unity已被Google暂停更新。
 
-在编译项目之前请确保导入了[arcore-unity-sdk-1.15.0.unitypackage](https://github.com/google-ar/arcore-unity-sdk/releases/download/v1.15.0/arcore-unity-sdk-1.15.0.unitypackage)和[GoogleVRForUnity_1.200.1.unitypackage](https://github.com/googlevr/gvr-unity-sdk/releases/download/v1.200.1/GoogleVRForUnity_1.200.1.unitypackage)并更新了全部子模块。
+在编译项目之前请确保导入了[arcore-unity-sdk-1.15.0.unitypackage](https://github.com/google-ar/arcore-unity-sdk/releases/download/v1.15.0/arcore-unity-sdk-1.15.0.unitypackage)和[GoogleVRForUnity_1.200.1.unitypackage](https://github.com/googlevr/gvr-unity-sdk/releases/download/v1.200.1/GoogleVRForUnity_1.200.1.unitypackage)并更新了全部子模块。
 
 ---
 

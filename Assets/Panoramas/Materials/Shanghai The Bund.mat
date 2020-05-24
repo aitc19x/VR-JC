@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PANO_20190715_175800.vr
+  m_Name: Shanghai The Bund
   m_Shader: {fileID: 4800000, guid: fa204d27b3aa745b78967af1ffe5a40f, type: 3}
   m_ShaderKeywords: _MAPPING_LATITUDE_LONGITUDE_LAYOUT _SAMPLES_BOXLOW
   m_LightmapFlags: 4

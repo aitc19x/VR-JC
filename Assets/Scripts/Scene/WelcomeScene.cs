@@ -38,4 +38,9 @@ public class WelcomeScene : MonoBehaviour
         MainCanvas.gameObject.SetActive(false);
         OptionsCanvas.gameObject.SetActive(true);
     }
+
+    public void HideOptions() {
+        OptionsCanvas.gameObject.SetActive(false);
+        MainCanvas.gameObject.SetActive(true);
+    }
 }

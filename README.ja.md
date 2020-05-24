@@ -20,8 +20,6 @@
 
 ## 開発環境
 
-グーグルARCoreをサポートするために「Package Manager UI」から「XR Legacy Input Helpers」をインストールする必要があるかもしれない。
-
 Unity 2019.3.xを推奨している。GVR SDK for Unityの更新はグーグルより一時停止しているため、2020.1または後ろのバージョンを使わないでください。
 
 プロジェクトをビルトの前に、[arcore-unity-sdk-1.15.0.unitypackage](https://github.com/google-ar/arcore-unity-sdk/releases/download/v1.15.0/arcore-unity-sdk-1.15.0.unitypackage)と[GoogleVRForUnity_1.200.1.unitypackage](https://github.com/googlevr/gvr-unity-sdk/releases/download/v1.200.1/GoogleVRForUnity_1.200.1.unitypackage)のインポートとサブモジュールの更新を確認してください。

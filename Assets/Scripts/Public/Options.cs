@@ -45,13 +45,12 @@ public class Options : MonoBehaviour
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
     }
 
-    public static void ExitApp()
+    public void ExitApp()
     {
-        System.Environment.Exit(0);
-    }
-
-    public void HideOptions() {
-        OptionsCanvas.gameObject.SetActive(false);
-        MainCanvas.gameObject.SetActive(true);
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }

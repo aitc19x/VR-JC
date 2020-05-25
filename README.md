@@ -24,6 +24,8 @@ Suggested Unity version is 2019.3.x, and do not use 2020.1 or after because the 
 
 Make sure to import [arcore-unity-sdk-1.15.0.unitypackage](https://github.com/google-ar/arcore-unity-sdk/releases/download/v1.15.0/arcore-unity-sdk-1.15.0.unitypackage) and [GoogleVRForUnity_1.200.1.unitypackage](https://github.com/googlevr/gvr-unity-sdk/releases/download/v1.200.1/GoogleVRForUnity_1.200.1.unitypackage), and update all submodules before building.
 
+Use AddressableAssetSettings > Manage Groups > Play Mode Script > Build > New Build > Default Build Script to build i10n assets.
+
 ---
 
 ## Contact

@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DefaultGroup: dea3169253d3540f49b4112b43941f06
   m_BuildRemoteCatalog: 0
+  m_BundleLocalCatalog: 0
   m_DisableCatalogUpdateOnStart: 0
   m_UniqueBundleIds: 0
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: 00e19adca6f34460bba205dfd0ebe562
   m_RemoteCatalogLoadPath:
-    m_Id: 
+    m_Id: 423eeb12874b84a23bb70b0b00ca3c30
   m_overridePlayerVersion: 
   m_GroupAssets:
   - {fileID: 11400000, guid: 73fce525f27464804b062f216be343a1, type: 2}

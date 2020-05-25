@@ -16,25 +16,32 @@ public class Options : MonoBehaviour
 
         int selected = 0;
 
-        if (generateMenu) {
-            var options = new List<Dropdown.OptionData>();
-            for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; ++i)
+        var options = new List<Dropdown.OptionData>();
+        for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; ++i)
+        {
+            var locale = LocalizationSettings.AvailableLocales.Locales[i];
+            if (LocalizationSettings.SelectedLocale == locale)
+                selected = i;
+            string localeName = locale.name;
+            Debug.Log(locale.name);
+            switch (localeName)
             {
-                var locale = LocalizationSettings.AvailableLocales.Locales[i];
-                if (LocalizationSettings.SelectedLocale == locale)
-                    selected = i;
-                options.Add(new Dropdown.OptionData(locale.name));
+                case "Chinese (Simplified) (zh)":
+                    localeName = "中文";
+                    break;
+                case "Korean (ko)":
+                    localeName = "한국어";
+                    break;
+                case "Japanese (ja)":
+                    localeName = "日本語";
+                    break;
+                case "English (en)":
+                    localeName = "English";
+                    break;
             }
-            dropdown.options = options;
-        } else {
-            
-            for (int i = 0; i < LocalizationSettings.AvailableLocales.Locales.Count; ++i)
-            {
-                var locale = LocalizationSettings.AvailableLocales.Locales[i];
-                if (LocalizationSettings.SelectedLocale == locale)
-                    selected = i;
-            }
+            options.Add(new Dropdown.OptionData(localeName));
         }
+        dropdown.options = options;
 
         dropdown.value = selected;
         dropdown.onValueChanged.AddListener(LocaleSelected);

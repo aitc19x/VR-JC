@@ -20,11 +20,27 @@ For the progress, please have a glance at the “Projects” tab.
 
 ## Environment
 
-Suggested Unity version is 2019.3.x, and do not use 2020.1 or after because the update for GVR SDK for Unity is paused by Google.
+Suggested Unity version is 2019.4 LTS, and 2019.3.12 or later is required.
 
-Make sure to import [arcore-unity-sdk-1.15.0.unitypackage](https://github.com/google-ar/arcore-unity-sdk/releases/download/v1.15.0/arcore-unity-sdk-1.15.0.unitypackage) and [GoogleVRForUnity_1.200.1.unitypackage](https://github.com/googlevr/gvr-unity-sdk/releases/download/v1.200.1/GoogleVRForUnity_1.200.1.unitypackage), and update all submodules before building.
+Make sure to import [arcore-unity-sdk-1.15.0.unitypackage](https://github.com/google-ar/arcore-unity-sdk/releases/download/v1.18.0/arcore-unity-sdk-1.15.0.unitypackage) before building.
 
-Use AddressableAssetSettings > Manage Groups > Play Mode Script > Build > New Build > Default Build Script to build i10n assets.
+Change ```/Packages/manifest.json.tmpl``` to ```/Packages/manifest.json``` to install required packages.
+
+#### For developers outside of China
+
+The third line of ```Packages/manifest.json``` should be:
+
+```json
+"com.google.xr.cardboard": "https://github.com/googlevr/cardboard-xr-plugin.git",
+```
+
+#### For developers inside of China
+
+Extract [cardboard-xr-plugin-master.zip](https://github.com/googlevr/cardboard-xr-plugin/archive/master.zip) and change the third line of ```/Packages/manifest.json``` to the following format:
+
+```json
+"com.google.xr.cardboard": "file:/path/to/cardboard-xr-plugin-master",
+```
 
 ---
 

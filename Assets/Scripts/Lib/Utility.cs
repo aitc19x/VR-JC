@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class Utility : MonoBehaviour
 {
-    public static List<T> FindObjectsOfTypeAll<T>()
+    public static T[] FindObjectsOfTypeAll<T>()
     {
         return SceneManager.GetActiveScene().GetRootGameObjects()
             .SelectMany(g => g.GetComponentsInChildren<T>(true))
-            .ToList();
+            .ToArray();
     }
 
     public static string ReadAllText(string path) {

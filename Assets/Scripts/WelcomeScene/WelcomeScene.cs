@@ -29,21 +29,15 @@ public class WelcomeScene : MonoBehaviour
         OptionsCanvas.gameObject.SetActive(false);
     }
 
-    public void HideCopyright() {
-        CopyrightCanvas.gameObject.SetActive(false);
-        MainCanvas.gameObject.SetActive(true);
-        OptionsCanvas.gameObject.SetActive(false);
-    }
-
     public void ShowOptions() {
         MainCanvas.gameObject.SetActive(false);
         OptionsCanvas.gameObject.SetActive(true);
         CopyrightCanvas.gameObject.SetActive(false);
     }
 
-    public void HideOptions() {
-        OptionsCanvas.gameObject.SetActive(false);        
-        MainCanvas.gameObject.SetActive(true);
+    public void ShowMain() {
         CopyrightCanvas.gameObject.SetActive(false);
+        OptionsCanvas.gameObject.SetActive(false);
+        MainCanvas.gameObject.SetActive(true);
     }
 }

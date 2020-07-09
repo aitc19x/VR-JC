@@ -32,7 +32,7 @@ public class Localization : MonoBehaviour
         string sceneName = SceneManager.GetActiveScene().name;
         string locale = get();
         var json = JsonConvert.DeserializeObject<Dictionary<string, string>>(Utility.ReadAllText(Application.streamingAssetsPath + "/Locales/" + sceneName + "-" + locale + ".json"));
-        List<Text> labels = Utility.FindObjectsOfTypeAll<Text>();
+        Text[] labels = Utility.FindObjectsOfTypeAll<Text>();
         foreach (Text label in labels) {
             if (json.ContainsKey(label.name))
                 label.text = json[label.name];

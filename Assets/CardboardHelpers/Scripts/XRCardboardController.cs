@@ -58,6 +58,7 @@ public class XRCardboardController : MonoBehaviour
 
         if (IsTriggerPressed())
         {
+            _gazedAtObject?.SendMessage("PointerClick");
             OnClick();
         }
 
@@ -110,10 +111,15 @@ public class XRCardboardController : MonoBehaviour
 
     private void _MakeAllButtonsClickable()
     {
-        Button[] buttons = FindObjectsOfType<Button>();
+        Button[] buttons = Utility.FindObjectsOfTypeAll<Button>();
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].gameObject.AddComponent<CardboardButtonClickable>();
+        }
+        Dropdown[] dropdowns = Utility.FindObjectsOfTypeAll<Dropdown>();
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            dropdowns[i].gameObject.AddComponent<CardboardDropdownClickable>();
         }
     }
 

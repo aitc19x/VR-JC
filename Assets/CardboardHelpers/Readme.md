@@ -1,3 +1,5 @@
+CardboardInteractor is used in this project with modifications. The original author is linojon. Here follows the text of original readme:
+
 # XR Cardboard Interactor #
 
 _Helpers for integrating Google Cardboard XR Plugin with the Unity XR Interaction Toolkit_

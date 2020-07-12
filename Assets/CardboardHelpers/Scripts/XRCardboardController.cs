@@ -117,7 +117,7 @@ public class XRCardboardController : MonoBehaviour
             buttons[i].gameObject.AddComponent<CardboardButtonClickable>();
         }
         Dropdown[] dropdowns = Utility.FindObjectsOfTypeAll<Dropdown>();
-        for (int i = 0; i < buttons.Length; i++)
+        for (int i = 0; i < dropdowns.Length; i++)
         {
             dropdowns[i].gameObject.AddComponent<CardboardDropdownClickable>();
         }

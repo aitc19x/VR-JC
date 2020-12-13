@@ -48,6 +48,6 @@ Unity 2019.4 LTS を推奨しています。それとも Unity 2019.3.12 以上�
 
 明石工業高等専門学校（日本）情報工学研究部のTwitter： https://twitter.com/jyoken/
 
-江西師範大学附属中米国際高校（中国）パソコン部の公式サイト： https://aitc.cstu.gq/
+江西師範大学附属中米国際高校（中国）情報科学部の公式サイト： https://aitc.cstu.xyz/
 
 クリスタル日本文化研究グループ（中国）の公式サイト： https://cnk.cstu.gq

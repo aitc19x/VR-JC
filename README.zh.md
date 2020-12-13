@@ -48,6 +48,6 @@
 
 明石高专信息工学研究社（日本）的推特：https://twitter.com/jyoken/
 
-江西师大附中中美国际学校（中国）信息技术社的官网：https://aitc.cstu.gq/
+江西师大附中中美国际学校（中国）信息技术社的官网：https://aitc.cstu.xyz/
 
-Crystal日本文化研究小组（中国）的官网：https://cnk.cstu.gq/
+Crystal日本文化研究小组（中国）的官网：https://cnk.cstu.xyz/

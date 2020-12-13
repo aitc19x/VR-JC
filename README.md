@@ -48,6 +48,6 @@ Extract [cardboard-xr-plugin-master.zip](https://github.com/googlevr/cardboard-x
 
 Akashi Jyoken (Japan)'s Twitter: https://twitter.com/jyoken/
 
-AMSJXNU (China) IT Club's Website: https://aitc.cstu.gq/
+AMSJXNU (China) IT Club's Website: https://aitc.cstu.xyz/
 
-Crystal Japan Research (China)'s Website: https://cnk.cstu.gq/
+Crystal Japan Research (China)'s Website: https://cnk.cstu.xyz/

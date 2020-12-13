@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Library;
 #if !UNITY_EDITOR
 using Google.XR.Cardboard;
 #endif
@@ -16,7 +17,7 @@ public class XRCardboardController : MonoBehaviour
 
     public UnityEvent OnTriggerPressed = new UnityEvent();
     
-    private Camera camera;
+    private Camera mainCamera;
     private GameObject _gazedAtObject = null;
     private const float MAX_DISTANCE = 10;
 
@@ -40,8 +41,8 @@ public class XRCardboardController : MonoBehaviour
 
     private void Start()
     {
-        if (camera == null)
-            camera = Camera.main;
+        if (mainCamera == null)
+            mainCamera = Camera.main;
 
         SetupCardboard();
 

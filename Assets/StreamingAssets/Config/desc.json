@@ -1,22 +1,13 @@
-[{
-  "Title": "1",
-  "Content": "test content",
-  "SpherePosition": {
-    "x": 0.0,
-    "y": 0.0,
-    "z": 3.0
-  },
-  "SphereRotation": {
-    "x": 0.0,
-    "y": 0.0,
-    "z": 0.0,
-    "w": 0.0,
-    "eulerAngles": {
+[
+  {
+    "Title": "0",
+    "Content": "test content",
+    "SpherePosition": {
       "x": 0.0,
       "y": 0.0,
-      "z": 0.0
+      "z": 12.0
     },
-    "normalized": {
+    "SphereRotation": {
       "x": 0.0,
       "y": 0.0,
       "z": 0.0,
@@ -26,29 +17,18 @@
         "y": 0.0,
         "z": 0.0
       }
-    }
-  },
-  "SphereScale": {
-    "x": 1.0,
-    "y": 1.0,
-    "z": 1.0
-  },
-  "PopUpPosition": {
-    "x": 0.0,
-    "y": 1.0,
-    "z": 3.0
-  },
-  "PopUpRotation": {
-    "x": 0.0,
-    "y": 0.0,
-    "z": 0.0,
-    "w": 0.0,
-    "eulerAngles": {
+    },
+    "SphereScale": {
+      "x": 3.0,
+      "y": 3.0,
+      "z": 3.0
+    },
+    "PopUpPosition": {
       "x": 0.0,
       "y": 0.0,
-      "z": 0.0
+      "z": 2.0
     },
-    "normalized": {
+    "PopUpRotation": {
       "x": 0.0,
       "y": 0.0,
       "z": 0.0,
@@ -58,11 +38,12 @@
         "y": 0.0,
         "z": 0.0
       }
-    }
-  },
-  "PopUpScale": {
-    "x": 1.0,
-    "y": 1.0,
-    "z": 1.0
+    },
+    "PopUpScale": {
+      "x": 0.05,
+      "y": 0.05,
+      "z": 0.05
+    },
+    "Showing": false
   }
-}]
+]

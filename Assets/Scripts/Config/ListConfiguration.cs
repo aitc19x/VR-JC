@@ -7,7 +7,7 @@ namespace Config
 {
     public class ListConfiguration<T> : MonoBehaviour
     {
-        private List<T> m_Json;
+        protected List<T> m_Json;
         private readonly string m_Name;
 
         public ListConfiguration(string name)
@@ -30,6 +30,11 @@ namespace Config
                     Save();
                 }
             }
+            Load();
+        }
+
+        public void Load()
+        {
             string jsonString = File.ReadAllText(Application.persistentDataPath + "/Config/" + m_Name + ".json");
             m_Json = JsonConvert.DeserializeObject<List<T>>(jsonString);
         }
@@ -64,9 +69,12 @@ namespace Config
             Save();
         }
 
-        private void Save()
+        protected void Save()
         {
-            File.WriteAllText(Application.persistentDataPath + "/Config/" + m_Name + ".json", JsonConvert.SerializeObject(m_Json, Formatting.Indented));
+            File.WriteAllText(Application.persistentDataPath + "/Config/" + m_Name + ".json", JsonConvert.SerializeObject(m_Json, Formatting.Indented, new JsonSerializerSettings()
+                { 
+                    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                }));
         }
     }
 }

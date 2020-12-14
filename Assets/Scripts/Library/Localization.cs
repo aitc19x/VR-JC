@@ -19,7 +19,14 @@ namespace Library
                     label.text = json[label.name];
             }
         }
-        
+    
+        public string GetSingleTranslation(string label) {
+            string sceneName = SceneManager.GetActiveScene().name;
+            string locale = Get();
+            var json = JsonConvert.DeserializeObject<Dictionary<string, string>>(Utility.ReadAllText(Application.streamingAssetsPath + "/Locales/" + sceneName + "-" + locale + ".json"));
+            return json?[label];
+        }
+
         private string Get() {
             string locale;
             AppSettings appSettings = gameObject.AddComponent<AppSettings>();

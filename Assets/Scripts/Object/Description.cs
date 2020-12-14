@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using UnityEngine;
 
 namespace Object
@@ -13,6 +12,6 @@ namespace Object
         public Vector3 PopUpPosition;
         public Quaternion PopUpRotation;
         public Vector3 PopUpScale;
-        [JsonIgnore] public bool Showing = false;
+        public bool Showing = false;
     }
 }

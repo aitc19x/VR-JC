@@ -1,4 +1,5 @@
-﻿using Config;
+﻿using System.IO;
+using Config;
 using Library;
 using UnityEngine;
 
@@ -25,6 +26,13 @@ namespace Welcome
             
             Localization localization = Utility.FindObjectsOfTypeAll<Localization>()[0];
             localization.Awake();
+        }
+
+        public void CleanData()
+        {
+            DirectoryInfo dataDir = new DirectoryInfo(Application.persistentDataPath);
+            dataDir.Delete(true);
+            ExitApp();
         }
 
         public void ExitApp()

@@ -14,10 +14,11 @@ namespace Object
             obj = gameObject;
         }
         
-        protected void Update () {
+        protected void Update() {
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit Hit;
-         
+
+            // FIXME: may not work in VR mode
             if (Input.GetMouseButtonDown(0))
             {
                 if (Physics.Raycast(ray, out Hit) && Hit.collider.gameObject == gameObject)
